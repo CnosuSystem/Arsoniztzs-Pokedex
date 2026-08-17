@@ -10,7 +10,13 @@ You can install the latest version directly from this repository:
 pip install "git+https://github.com/CnosuSystem/Arsoniztzs-Pokedex.git"
 ```
 
-No PyPi installed is planned, as this is a minor/niche project and I prefer to keep it off PyPi.
+If you installed the project but want to update it to the latest version, use:
+
+```
+pip install --upgrade "git+https://github.com/CnosuSystem/Arsoniztzs-Pokedex.git"
+```
+
+No PyPi install is planned, as this is a minor/niche project and I prefer to keep it off PyPi.
 
 ## Building from Source
 
