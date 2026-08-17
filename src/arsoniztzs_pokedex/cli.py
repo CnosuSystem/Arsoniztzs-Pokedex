@@ -18,17 +18,22 @@ with DATA_FILE.open("r", encoding="utf-8") as file:
     "--format",
     type=click.Choice(["card", "json"], case_sensitive=False),
     default="card",
-    help="Output format (can be: card, json)",
+    help="Output format (can be: card, json).",
 )
 @click.option(
     "-s",
     "--style",
     type=click.Choice(["box", "block"], case_sensitive=False),
     default="box",
-    help="ASCII font style for card format (can be: box, block)",
+    help="ASCII font style for card format (can be: box, block).",
 )
 @click.argument("pokemon")
 def search(pokemon, format, style):
+    """
+    Command-line interface for quick browsing of data of fake Pokémon made by Arsoniztz.
+
+    Positional argument POKEMON can be either an id or a name.
+    """
     query = pokemon.lower()
 
     for pokemon in pokemon_database:

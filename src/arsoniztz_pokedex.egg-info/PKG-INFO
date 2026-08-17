@@ -1,7 +1,0 @@
-Metadata-Version: 2.4
-Name: arsoniztz-pokedex
-Version: 0.1.0
-Summary: A basic CLI Pokédex for quick viewing of Arsoniztz's fake Pokémon.
-Requires-Python: >=3.9
-Requires-Dist: click>=8.0
-Requires-Dist: colorama>=0.4.6
