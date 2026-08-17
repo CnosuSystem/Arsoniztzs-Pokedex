@@ -18,6 +18,11 @@ No PyPi installed is planned, as this is a minor/niche project and I prefer to k
 a-dex --help
 Usage: a-dex [OPTIONS] POKEMON
 
+  Command-line interface for quick browsing of data of fake Pokémon made by
+  Arsoniztz.
+
+  Positional argument POKEMON can be either an id or a name.
+
 Options:
   -f, --format [card|json]  Output format (can be: card, json).
   -s, --style [box|block]   ASCII font style for card format (can be: box,
