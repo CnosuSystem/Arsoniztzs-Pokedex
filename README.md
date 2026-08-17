@@ -19,9 +19,9 @@ a-dex --help
 Usage: a-dex [OPTIONS] POKEMON
 
 Options:
-  -f, --format [card|json]  Output format (can be: card, json)
+  -f, --format [card|json]  Output format (can be: card, json).
   -s, --style [box|block]   ASCII font style for card format (can be: box,
-                            block)
+                            block).
   -h, --help                Show this message and exit.
 ```
 
