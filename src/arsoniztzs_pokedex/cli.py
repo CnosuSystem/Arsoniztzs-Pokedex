@@ -6,7 +6,11 @@ import click
 from .display import display_card, display_json
 
 
+CONFIG_FILE = Path(__file__).resolve().parent / "resources" / "config.json"
 DATA_FILE = Path(__file__).resolve().parent / "resources" / "pokemon_database.json"
+
+with CONFIG_FILE.open("r", encoding="utf-8") as file:
+    config = json.load(file)
 
 with DATA_FILE.open("r", encoding="utf-8") as file:
     pokemon_database = json.load(file)
@@ -17,14 +21,14 @@ with DATA_FILE.open("r", encoding="utf-8") as file:
     "-f",
     "--format",
     type=click.Choice(["card", "json"], case_sensitive=False),
-    default="card",
+    default=config["defaults"]["format"],
     help="Output format.",
 )
 @click.option(
     "-s",
     "--style",
     type=click.Choice(["box", "block"], case_sensitive=False),
-    default="box",
+    default=config["defaults"]["style"],
     help="ASCII font style for card format.",
 )
 @click.argument("pokemon")

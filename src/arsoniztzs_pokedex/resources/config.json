@@ -1,0 +1,6 @@
+{
+    "defaults": {
+        "format": "card",
+        "style": "box"
+    }
+}

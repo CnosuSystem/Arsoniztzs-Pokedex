@@ -12,6 +12,29 @@ pip install "git+https://github.com/CnosuSystem/Arsoniztzs-Pokedex.git"
 
 No PyPi installed is planned, as this is a minor/niche project and I prefer to keep it off PyPi.
 
+## Building from Source
+
+### 1. Clone the repository
+
+Make sure you have Git installed, then clone the repository:
+
+```
+git clone https://github.com/CnosuSystem/Arsoniztzs-Pokedex.git
+cd Arsoniztzs-Pokedex
+```
+
+If you don't have Git, simply download the raw source .zip file from GitHub and put it in your preffered directory. Then open it in the terminal.
+
+### 2. Install the project
+
+Install the project and its dependencies with:
+
+```
+python -m pip install .
+```
+
+The project's package configuration will install its required dependencies (click>=8.0 and colorama>=0.4.6) and register the a-dex command.
+
 ## Usage
 
 ```
