@@ -32,7 +32,7 @@ Options:
 
 ## License
 
-This project is licensed under the GNU GPLv3 License - see the LICENSE.md file for details
+This project is licensed under the [GNU GPLv3 License](https://www.gnu.org/licenses/gpl-3.0.en.html#license-text) - see the [LICENSE.md](https://github.com/CnosuSystem/Arsoniztzs-Pokedex?tab=GPL-3.0-1-ov-file) file for details
 
 ## Acknowledgments
 
