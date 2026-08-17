@@ -1,0 +1,13 @@
+pyproject.toml
+src/arsoniztz_pokedex.egg-info/PKG-INFO
+src/arsoniztz_pokedex.egg-info/SOURCES.txt
+src/arsoniztz_pokedex.egg-info/dependency_links.txt
+src/arsoniztz_pokedex.egg-info/entry_points.txt
+src/arsoniztz_pokedex.egg-info/requires.txt
+src/arsoniztz_pokedex.egg-info/top_level.txt
+src/arsoniztzs_pokedex/__init__.py
+src/arsoniztzs_pokedex/__main__.py
+src/arsoniztzs_pokedex/cli.py
+src/arsoniztzs_pokedex/display.py
+src/arsoniztzs_pokedex/formatting.py
+src/arsoniztzs_pokedex/resources/pokemon_database.json

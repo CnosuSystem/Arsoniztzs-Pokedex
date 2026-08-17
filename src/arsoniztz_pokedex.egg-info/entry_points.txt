@@ -1,0 +1,2 @@
+[console_scripts]
+a-dex = arsoniztzs_pokedex.cli:search

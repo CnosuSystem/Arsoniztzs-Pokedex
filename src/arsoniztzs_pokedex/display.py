@@ -1,8 +1,9 @@
 import json
 import textwrap
+
 from colorama import Fore, Style, init
 
-from formatting import format_evolution, format_id, format_type
+from .formatting import format_evolution, format_id, format_type
 
 
 init()

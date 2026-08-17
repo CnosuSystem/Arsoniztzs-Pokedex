@@ -8,14 +8,15 @@ version = "0.1.0"
 description = "A basic CLI Pokédex for quick viewing of Arsoniztz's fake Pokémon."
 requires-python = ">=3.9"
 dependencies = [
-  "click>=8.0",
-  "colorama>=0.4.6",
+    "click>=8.0",
+    "colorama>=0.4.6",
 ]
 
 [project.scripts]
-a-dex = "cli:search"
+a-dex = "arsoniztzs_pokedex.cli:search"
 
-[tool.setuptools]
-package-dir = {"" = "src"}
-py-modules = ["cli", "display", "formatting"]
-include-package-data = true
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+arsoniztzs_pokedex = ["resources/**/*"]

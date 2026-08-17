@@ -1,8 +1,9 @@
 import json
-import click
 from pathlib import Path
 
-from display import display_card, display_json
+import click
+
+from .display import display_card, display_json
 
 
 DATA_FILE = Path(__file__).resolve().parent / "resources" / "pokemon_database.json"

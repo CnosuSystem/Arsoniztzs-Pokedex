@@ -1,4 +1,4 @@
-from cli import search
+from .cli import search
 
 
 if __name__ == "__main__":
