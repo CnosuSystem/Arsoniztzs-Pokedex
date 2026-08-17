@@ -1,0 +1,104 @@
+[
+    {
+        "id": 1,
+        "name": "Cindavy",
+        "type": [
+            "Fire"
+        ],
+        "evolution": [1, 2, 3],
+        "abilities": [
+            "Blaze"
+        ],
+        "profile": {
+            "shape": 9,
+            "species": "Cavy",
+            "height": "0.6 m",
+            "weight": "4.2 kg",
+            "egg": [
+                "Field"
+            ],
+            "gender_ratio": {
+                "male": 87.5,
+                "female": 12.5
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    },
+
+    {
+        "id": 2,
+        "name": "Flamavy",
+        "type": [
+            "Fire"
+        ],
+        "evolution": [1, 2, 3],
+        "abilities": [
+            "Blaze"
+        ],
+        "profile": {
+            "shape": 9,
+            "species": "Cavy",
+            "height": "1.1 m",
+            "weight": "11.5 kg",
+            "egg": [
+                "Field"
+            ],
+            "gender_ratio": {
+                "male": 87.5,
+                "female": 12.5
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    },
+
+    {
+        "id": 3,
+        "name": "Cornflare",
+        "type": [
+            "Fire",
+            "Ghost"
+        ],
+        "evolution": [1, 2, 3],
+        "abilities": [
+            "Intimidate"
+        ],
+        "profile": {
+            "shape": 9,
+            "species": "Cavy",
+            "height": "1.8 m",
+            "weight": "48.9 kg",
+            "egg": [
+                "Field"
+            ],
+            "gender_ratio": {
+                "male": 87.5,
+                "female": 12.5
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    }
+]

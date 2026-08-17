@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arsoniztz-pokedex"
+version = "0.1.0"
+description = "A basic CLI Pokédex for quick viewing of Arsoniztz's fake Pokémon."
+requires-python = ">=3.9"
+dependencies = [
+  "click>=8.0",
+  "colorama>=0.4.6",
+]
+
+[project.scripts]
+a-dex = "cli:search"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["cli", "display", "formatting"]
+include-package-data = true
