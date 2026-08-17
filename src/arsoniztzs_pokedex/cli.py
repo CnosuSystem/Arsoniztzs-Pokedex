@@ -42,11 +42,12 @@ def search(pokemon, format, style):
 
     for pokemon in pokemon_database:
         if str(pokemon["id"]) == query or pokemon["name"].lower() == query:
-            if format == "card":
-                display_card(pokemon, pokemon_database, style)
-            elif format == "json":
-                display_json(pokemon)
-            return
+            if not query == "0":
+                if format == "card":
+                    display_card(pokemon, pokemon_database, style)
+                elif format == "json":
+                    display_json(pokemon)
+                return
 
     print()
     print("Pokemon not found.")

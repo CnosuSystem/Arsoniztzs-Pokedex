@@ -1,5 +1,39 @@
 [
     {
+        "id": 0,
+        "name": "",
+        "type": [
+            ""
+        ],
+        "evolution": [],
+        "abilities": [
+            ""
+        ],
+        "profile": {
+            "shape": 0,
+            "species": "",
+            "height": "",
+            "weight": "",
+            "egg": [
+                ""
+            ],
+            "gender_ratio": {
+                "male": 50,
+                "female": 50
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    },
+
+    {
         "id": 1,
         "name": "Cindavy",
         "type": [
@@ -76,7 +110,7 @@
         ],
         "evolution": [1, 2, 3],
         "abilities": [
-            "Intimidate"
+            "Blaze"
         ],
         "profile": {
             "shape": 9,
@@ -99,6 +133,214 @@
             "Sp. Attack": 125,
             "Sp. Defense": 85,
             "Speed": 80
+        }
+    },
+
+        {
+        "id": 4,
+        "name": "Newtwit",
+        "type": [
+            "Water"
+        ],
+        "evolution": [4, 5, 6],
+        "abilities": [
+            "Torrent"
+        ],
+        "profile": {
+            "shape": 4,
+            "species": "Salamander",
+            "height": "0.4 m",
+            "weight": "3.7 kg",
+            "egg": [
+                "Water 1",
+                "Field"
+            ],
+            "gender_ratio": {
+                "male": 87.5,
+                "female": 12.5
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    },
+
+        {
+        "id": 5,
+        "name": "Trimni",
+        "type": [
+            "Water"
+        ],
+        "evolution": [4, 5, 6],
+        "abilities": [
+            "Torrent"
+        ],
+        "profile": {
+            "shape": 4,
+            "species": "Salamander",
+            "height": "",
+            "weight": "",
+            "egg": [
+                "Water 1",
+                "Field"
+            ],
+            "gender_ratio": {
+                "male": 87.5,
+                "female": 12.5
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    },
+
+        {
+        "id": 6,
+        "name": "Tritide",
+        "type": [
+            "Water",
+            "Ice"
+        ],
+        "evolution": [4, 5, 6],
+        "abilities": [
+            "Torrent"
+        ],
+        "profile": {
+            "shape": 4,
+            "species": "Salamander",
+            "height": "",
+            "weight": "",
+            "egg": [
+                "Water 1",
+                "Field"
+            ],
+            "gender_ratio": {
+                "male": 87.5,
+                "female": 12.5
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    },
+
+    {
+        "id": 7,
+        "name": "",
+        "type": [
+            "Grass"
+        ],
+        "evolution": [7, 8, 9],
+        "abilities": [
+            "Overgrow"
+        ],
+        "profile": {
+            "shape": 0,
+            "species": "",
+            "height": "",
+            "weight": "",
+            "egg": [
+                ""
+            ],
+            "gender_ratio": {
+                "male": 50,
+                "female": 50
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    },
+
+    {
+        "id": 8,
+        "name": "",
+        "type": [
+            "Grass"
+        ],
+        "evolution": [7, 8, 9],
+        "abilities": [
+            "Overgrow"
+        ],
+        "profile": {
+            "shape": 0,
+            "species": "",
+            "height": "",
+            "weight": "",
+            "egg": [
+                ""
+            ],
+            "gender_ratio": {
+                "male": 50,
+                "female": 50
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
+        }
+    },
+
+    {
+        "id": 9,
+        "name": "",
+        "type": [
+            "Grass"
+        ],
+        "evolution": [7, 8, 9],
+        "abilities": [
+            "Overgrow"
+        ],
+        "profile": {
+            "shape": 0,
+            "species": "",
+            "height": "",
+            "weight": "",
+            "egg": [
+                ""
+            ],
+            "gender_ratio": {
+                "male": 50,
+                "female": 50
+            },
+            "description": ""
+        },
+        "base_stats": {
+            "HP": 0,
+            "Attack": 0,
+            "Defense": 0,
+            "Sp. Attack": 0,
+            "Sp. Defense": 0,
+            "Speed": 0
         }
     }
 ]
