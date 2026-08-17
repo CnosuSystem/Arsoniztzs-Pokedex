@@ -24,9 +24,8 @@ Usage: a-dex [OPTIONS] POKEMON
   Positional argument POKEMON can be either an id or a name.
 
 Options:
-  -f, --format [card|json]  Output format (can be: card, json).
-  -s, --style [box|block]   ASCII font style for card format (can be: box,
-                            block).
+  -f, --format [card|json]  Output format.
+  -s, --style [box|block]   ASCII font style for card format.
   -h, --help                Show this message and exit.
 ```
 
