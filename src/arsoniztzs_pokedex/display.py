@@ -31,6 +31,7 @@ def display_card(pokemon, pokemon_database, font_style):
     line3 = f"{height} / {weight}"
 
     TARGET_WIDTH = 40
+    TARGET_DESCRIPTION_ROWS = 5
 
     pad1 = " " * (TARGET_WIDTH - len(line1) - len(id_art[0]))
     pad2 = " " * (TARGET_WIDTH - len(line2) - len(id_art[1]))
@@ -45,8 +46,14 @@ def display_card(pokemon, pokemon_database, font_style):
     formatted_types = [format_type(t) for t in types]
     print(" ".join(formatted_types))
 
+    wrapped_description = textwrap.fill(description, width=TARGET_WIDTH)
+    description_lines = wrapped_description.splitlines()
+
+    # Add blank lines until the description occupies the target number of rows
+    description_lines += [""] * max(0, TARGET_DESCRIPTION_ROWS - len(description_lines))
+
     print()
-    print(textwrap.fill(description, width=40))
+    print("\n".join(description_lines))
 
     print()
     formatted_evolution = format_evolution(evolution_ids, id, pokemon_database)

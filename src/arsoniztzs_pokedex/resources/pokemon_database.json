@@ -21,15 +21,15 @@
                 "male": 87.5,
                 "female": 12.5
             },
-            "description": ""
+            "description": "Cindavy's fur is constantly smoldering, making it look as if it just crawled out of a campfire. When threatened, it shakes its body and scatters embers around it."
         },
         "base_stats": {
-            "HP": 0,
-            "Attack": 0,
-            "Defense": 0,
-            "Sp. Attack": 0,
-            "Sp. Defense": 0,
-            "Speed": 0
+            "HP": 75,
+            "Attack": 40,
+            "Defense": 60,
+            "Sp. Attack": 80,
+            "Sp. Defense": 40,
+            "Speed": 20
         }
     },
 
@@ -58,12 +58,12 @@
             "description": ""
         },
         "base_stats": {
-            "HP": 0,
-            "Attack": 0,
-            "Defense": 0,
-            "Sp. Attack": 0,
-            "Sp. Defense": 0,
-            "Speed": 0
+            "HP": 90,
+            "Attack": 45,
+            "Defense": 80,
+            "Sp. Attack": 105,
+            "Sp. Defense": 55,
+            "Speed": 30
         }
     },
 
@@ -93,12 +93,12 @@
             "description": ""
         },
         "base_stats": {
-            "HP": 0,
-            "Attack": 0,
-            "Defense": 0,
-            "Sp. Attack": 0,
-            "Sp. Defense": 0,
-            "Speed": 0
+            "HP": 100,
+            "Attack": 55,
+            "Defense": 95,
+            "Sp. Attack": 125,
+            "Sp. Defense": 85,
+            "Speed": 80
         }
     }
 ]
