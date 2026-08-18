@@ -18,8 +18,8 @@
                 ""
             ],
             "gender_ratio": {
-                "male": 50,
-                "female": 50
+                "male": "50%",
+                "female": "50%"
             },
             "description": ""
         },
@@ -52,8 +52,8 @@
                 "Field"
             ],
             "gender_ratio": {
-                "male": 87.5,
-                "female": 12.5
+                "male": "87.5%",
+                "female": "12.5%"
             },
             "description": "Cindavy's fur is constantly smoldering, making it look as if it just crawled out of a campfire. When threatened, it shakes its body and scatters embers around it."
         },
@@ -86,8 +86,8 @@
                 "Field"
             ],
             "gender_ratio": {
-                "male": 87.5,
-                "female": 12.5
+                "male": "87.5%",
+                "female": "12.5%"
             },
             "description": ""
         },
@@ -121,8 +121,8 @@
                 "Field"
             ],
             "gender_ratio": {
-                "male": 87.5,
-                "female": 12.5
+                "male": "87.5%",
+                "female": "12.5%"
             },
             "description": ""
         },
@@ -191,8 +191,8 @@
                 "Field"
             ],
             "gender_ratio": {
-                "male": 87.5,
-                "female": 12.5
+                "male": "87.5%",
+                "female": "12.5%"
             },
             "description": ""
         },
@@ -227,8 +227,8 @@
                 "Field"
             ],
             "gender_ratio": {
-                "male": 87.5,
-                "female": 12.5
+                "male": "87.5%",
+                "female": "12.5%"
             },
             "description": ""
         },
@@ -261,8 +261,8 @@
                 ""
             ],
             "gender_ratio": {
-                "male": 87.5,
-                "female": 12.5
+                "male": "87.5%",
+                "female": "12.5%"
             },
             "description": ""
         },
@@ -295,8 +295,8 @@
                 ""
             ],
             "gender_ratio": {
-                "male": 87.5,
-                "female": 12.5
+                "male": "87.5%",
+                "female": "12.5%"
             },
             "description": ""
         },
@@ -330,8 +330,8 @@
                 ""
             ],
             "gender_ratio": {
-                "male": 87.5,
-                "female": 12.5
+                "male": "87.5%",
+                "female": "12.5%"
             },
             "description": ""
         },

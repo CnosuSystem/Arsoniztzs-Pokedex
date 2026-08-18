@@ -49,6 +49,23 @@ FONTS = {
     },
 }
 
+SHAPE_NAMES = {
+    0: "Head",
+    1: "Head & Legs",
+    2: "Fins",
+    3: "Insectoid",
+    4: "Four Legs",
+    5: "Four Wings",
+    6: "Gathering",
+    7: "Tentacles/Multiped",
+    8: "Upright Torso",
+    9: "Two Legs & Tail",
+    10: "Two Legs & No Tail",
+    11: "Two wings",
+    12: "Serpentine",
+    13: "Head & Arms",
+}
+
 
 def format_id(id, font_style):
     font_dict = FONTS.get(font_style.lower(), FONTS["box"])
@@ -104,3 +121,7 @@ def format_evolution(evolution_ids, current_id, pokemon_database):
     names_line = f" {Fore.BLUE}>{Style.RESET_ALL} ".join(formatted_names)
 
     return f"{ids_line}\n{names_line}"
+
+
+def format_shape(shape_id):
+    return SHAPE_NAMES.get(shape_id, "Unknown")

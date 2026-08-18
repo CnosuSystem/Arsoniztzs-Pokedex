@@ -43,9 +43,9 @@ def search(pokemon, format, style):
     for pokemon in pokemon_database:
         if str(pokemon["id"]) == query or pokemon["name"].lower() == query:
             if not query == "0":
-                if format == "detailed_card":
+                if format == "card":
                     display_card(pokemon, pokemon_database, style)
-                elif format == "card":
+                elif format == "detailed_card":
                     display_detailed_card(pokemon, pokemon_database, style)
                 elif format == "json":
                     display_json(pokemon)
