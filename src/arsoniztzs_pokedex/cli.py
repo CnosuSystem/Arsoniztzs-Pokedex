@@ -3,7 +3,7 @@ from pathlib import Path
 
 import click
 
-from .display import display_card, display_json
+from .display import display_card, display_detailed_card, display_json
 
 
 CONFIG_FILE = Path(__file__).resolve().parent / "resources" / "config.json"
@@ -20,7 +20,7 @@ with DATA_FILE.open("r", encoding="utf-8") as file:
 @click.option(
     "-f",
     "--format",
-    type=click.Choice(["card", "json"], case_sensitive=False),
+    type=click.Choice(["card", "detailed_card", "json"], case_sensitive=False),
     default=config["defaults"]["format"],
     help="Output format.",
 )
@@ -43,8 +43,10 @@ def search(pokemon, format, style):
     for pokemon in pokemon_database:
         if str(pokemon["id"]) == query or pokemon["name"].lower() == query:
             if not query == "0":
-                if format == "card":
+                if format == "detailed_card":
                     display_card(pokemon, pokemon_database, style)
+                elif format == "card":
+                    display_detailed_card(pokemon, pokemon_database, style)
                 elif format == "json":
                     display_json(pokemon)
                 return
