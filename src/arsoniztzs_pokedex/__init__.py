@@ -1,4 +1,4 @@
-"""Arsoniztz's Pokédex package."""
+"""Arsoniztz's Pokédex
 
-__all__ = ["__version__"]
-__version__ = "0.1.0"
+A minimalistic command-line Pokédex for quick browsing for data of Pokémon made by Arsoniztz
+"""
