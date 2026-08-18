@@ -58,6 +58,8 @@ Options:
   -h, --help                Show this message and exit.
 ```
 
+To edit your config.json file, move to your python ```site-packages``` folder, find ```arsoniztzs_pokedex```, move to ```resources``` and there should be your ```config.json``` file.
+
 ## Authors
 
 * [@Cnosu](https://spacehey.com/cnosu) - The guy that did all the coding
