@@ -4,7 +4,7 @@ A simple command-line Pokédex for browsing data of fake Pokémon made by Arsoni
 
 ## Installation
 
-You can install the latest version directly from this repository:
+If you have Git installed, you can install the latest version directly from this repository using:
 
 ```
 pip install "git+https://github.com/CnosuSystem/Arsoniztzs-Pokedex.git"
@@ -17,6 +17,8 @@ pip install --upgrade "git+https://github.com/CnosuSystem/Arsoniztzs-Pokedex.git
 ```
 
 No PyPi install is planned, as this is a minor/niche project and I prefer to keep it off PyPi.
+
+If you don't have Git, you can build the project from source.
 
 ## Building from Source
 
@@ -59,6 +61,10 @@ Options:
 ```
 
 To edit your config.json file, move to your python ```site-packages``` folder, find ```arsoniztzs_pokedex```, move to ```resources``` and there should be your ```config.json``` file.
+
+## Changelog
+
+For the changelog, please reffer to the [CHANGELOG.md](https://github.com/CnosuSystem/Arsoniztzs-Pokedex/blob/main/CHANGELOG.md) file in the root of this project's GitHub repository.
 
 ## Authors
 
