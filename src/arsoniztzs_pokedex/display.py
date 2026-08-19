@@ -12,7 +12,8 @@ def display_list(pokemon_database):
     print()
     print("List of Pokémon:")
     for pokemon in pokemon_database:
-        print(f"    #{pokemon["id"]}: {pokemon["name"]}")
+        if not pokemon["id"] == 0:
+            print(f"    #{pokemon["id"]}: {pokemon["name"]}")
 
 
 def display_card(pokemon, pokemon_database, font_style):
