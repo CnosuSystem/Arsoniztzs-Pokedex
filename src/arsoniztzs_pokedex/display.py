@@ -68,36 +68,36 @@ def display_detailed_card(pokemon, pokemon_database, font_style):
 
     print()
 
-    pad = " " * (TARGET_WIDTH - len("Shape:") - len(shape))
+    pad = format_padding(f"Shape:{shape}")
     print(f"Shape:{pad}{shape}")
 
-    pad = " " * (TARGET_WIDTH - len("Abilities:") - len(abilities[0]))
+    pad = format_padding(f"Abilities:{abilities[0]}")
     print(f"Abilities:{pad}{abilities[0]}")
     for i in range(len(abilities) - 1):
-        pad = " " * (TARGET_WIDTH - len(abilities[i + 1]))
+        pad = format_padding(f"{abilities[i + 1]}")
         print(f"{pad}{abilities[i + 1]}")
 
-    pad = " " * (TARGET_WIDTH - len("Egg Group:") - len(egg[0]))
+    pad = format_padding(f"Egg Group:{egg[0]}")
     print(f"Egg Group:{pad}{egg[0]}")
     for i in range(len(egg) - 1):
-        pad = " " * (TARGET_WIDTH - len(egg[i + 1]))
+        pad = format_padding(f"{egg[i + 1]}")
         print(f"{pad}{egg[i + 1]}")
 
-    pad = " " * (TARGET_WIDTH - len("Gender Ratio [M/F]:") - len(male_chance) - len("/") - len(female_chance))
+    pad = format_padding(f"Gender Ratio [M/F]:{male_chance}/{female_chance}")
     print(f"Gender Ratio [M/F]:{pad}{male_chance}/{female_chance}")
 
     print()
 
     print("Base Stats:")
-    pad = " " * (TARGET_WIDTH - len("HP:") - len(str(hp)))
+    pad = format_padding(f"HP:{hp}")
     print(f"HP:{pad}{hp}")
-    pad = " " * (TARGET_WIDTH - len("Attack:") - len(str(attack)))
+    pad = format_padding(f"Attack:{attack}")
     print(f"Attack:{pad}{attack}")
-    pad = " " * (TARGET_WIDTH - len("Defense:") - len(str(defense)))
+    pad = format_padding(f"Defense:{defense}")
     print(f"Defense:{pad}{defense}")
-    pad = " " * (TARGET_WIDTH - len("Sp. Attack:") - len(str(sp_attack)))
+    pad = format_padding(f"Sp. Attack:{sp_attack}")
     print(f"Sp. Attack:{pad}{sp_attack}")
-    pad = " " * (TARGET_WIDTH - len("Sp. Defense:") - len(str(sp_defense)))
+    pad = format_padding(f"Sp. Defense:{sp_defense}")
     print(f"Sp. Defense:{pad}{sp_defense}")
-    pad = " " * (TARGET_WIDTH - len("Speed:") - len(str(speed)))
+    pad = format_padding(f"Speed:{speed}")
     print(f"Speed:{pad}{speed}")
