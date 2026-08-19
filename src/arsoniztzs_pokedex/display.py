@@ -8,6 +8,7 @@ from .formatting import format_padding, format_description, format_evolution, fo
 init()
 
 
+
 def display_json(pokemon):
     print()
     print(json.dumps(pokemon, indent=4))
