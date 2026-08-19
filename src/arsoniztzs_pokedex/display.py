@@ -1,5 +1,4 @@
 import json
-import textwrap
 
 from colorama import Fore, Style, init
 
@@ -45,6 +44,7 @@ def display_card(pokemon, pokemon_database, font_style):
     formatted_evolution = format_evolution(evolution_ids, id, pokemon_database)
     print(formatted_evolution)
     print()
+
 
 def display_detailed_card(pokemon, pokemon_database, font_style):
     display_card(pokemon, pokemon_database, font_style)
