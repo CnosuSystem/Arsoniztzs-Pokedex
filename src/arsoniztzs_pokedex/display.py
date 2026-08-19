@@ -26,17 +26,13 @@ def display_card(pokemon, pokemon_database, font_style):
     description = pokemon["profile"]["description"]
     evolution_ids = pokemon.get("evolution", [])
 
-    line1 = name
-    line2 = f"{species} Pokémon"
-    line3 = f"{height} / {weight}"
-
     print()
-    pad = format_padding(line1)
-    print(f"{Fore.WHITE}{Style.BRIGHT}{line1}{Style.RESET_ALL}{pad}{id_art[0]}")
-    pad = format_padding(line2)
-    print(f"{Fore.WHITE}{Style.NORMAL}{line2}{Style.RESET_ALL}{pad}{id_art[1]}")
-    pad = format_padding(line3)
-    print(f"{Fore.WHITE}{Style.DIM}{line3}{Style.RESET_ALL}{pad}{id_art[2]}")
+    pad = format_padding(f"{name}{id_art[0]}")
+    print(f"{Fore.WHITE}{Style.BRIGHT}{name}{Style.RESET_ALL}{pad}{id_art[0]}")
+    pad = format_padding(f"{species} Pokémon{id_art[1]}")
+    print(f"{Fore.WHITE}{Style.NORMAL}{species} Pokémon{Style.RESET_ALL}{pad}{id_art[1]}")
+    pad = format_padding(f"{height} / {weight}{id_art[2]}")
+    print(f"{Fore.WHITE}{Style.DIM}{height} / {weight}{Style.RESET_ALL}{pad}{id_art[2]}")
     print()
 
     formatted_types = [format_type(t) for t in types]
