@@ -79,15 +79,6 @@ def format_padding(string):
     return " " * (TARGET_WIDTH - len(string))
 
 
-def format_description(description):
-    wrapped_description = textwrap.fill(description, width=TARGET_WIDTH)
-    description_lines = wrapped_description.splitlines()
-
-    # Add blank lines until the description occupies the target number of rows
-    description_lines += [""] * max(0, TARGET_DESCRIPTION_ROWS - len(description_lines))
-    return description_lines
-
-
 def format_id(id, font_style):
     font_dict = FONTS.get(font_style.lower(), FONTS["box"])
     id_str = f"{id:03}"
@@ -101,6 +92,15 @@ def format_id(id, font_style):
                 lines[i] += " "
 
     return lines
+
+
+def format_description(description):
+    wrapped_description = textwrap.fill(description, width=TARGET_WIDTH)
+    description_lines = wrapped_description.splitlines()
+
+    # Add blank lines until the description occupies the target number of rows
+    description_lines += [""] * max(0, TARGET_DESCRIPTION_ROWS - len(description_lines))
+    return description_lines
 
 
 def format_type(t):

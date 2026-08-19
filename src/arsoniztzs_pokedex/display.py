@@ -2,16 +2,17 @@ import json
 
 from colorama import Fore, Style, init
 
-from .formatting import format_padding, format_description, format_evolution, format_id, format_type, format_shape
+from .formatting import format_padding, format_id, format_description, format_evolution, format_type, format_shape
 
 
 init()
 
 
-def display_json(pokemon):
+def display_list(pokemon_database):
     print()
-    print(json.dumps(pokemon, indent=4))
-    print()
+    print("List of Pokémon:")
+    for pokemon in pokemon_database:
+        print(f"    #{pokemon["id"]}: {pokemon["name"]}")
 
 
 def display_card(pokemon, pokemon_database, font_style):
@@ -43,7 +44,6 @@ def display_card(pokemon, pokemon_database, font_style):
     print()
     formatted_evolution = format_evolution(evolution_ids, id, pokemon_database)
     print(formatted_evolution)
-    print()
 
 
 def display_detailed_card(pokemon, pokemon_database, font_style):
@@ -62,6 +62,7 @@ def display_detailed_card(pokemon, pokemon_database, font_style):
     sp_defense = pokemon["base_stats"]["Sp. Defense"]
     speed = pokemon["base_stats"]["Speed"]
 
+    print()
     print()
 
     pad = format_padding(f"Shape:{shape}")
@@ -97,3 +98,9 @@ def display_detailed_card(pokemon, pokemon_database, font_style):
     print(f"Sp. Defense:{pad}{sp_defense}")
     pad = format_padding(f"Speed:{speed}")
     print(f"Speed:{pad}{speed}")
+
+
+def display_json(pokemon):
+    print()
+    print(json.dumps(pokemon, indent=4))
+    print()
