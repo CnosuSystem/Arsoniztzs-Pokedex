@@ -1,5 +1,13 @@
-from colorama import Back, Fore, Style
+import textwrap
 
+from colorama import Back, Fore, Style, init
+
+
+init()
+
+
+TARGET_WIDTH = 40
+TARGET_DESCRIPTION_ROWS = 5
 
 TYPE_COLORS = {
     "Normal": Back.WHITE,
@@ -65,6 +73,19 @@ SHAPE_NAMES = {
     12: "Serpentine",
     13: "Head & Arms",
 }
+
+
+def format_padding(string):
+    return " " * (TARGET_WIDTH - len(string))
+
+
+def format_description(description):
+    wrapped_description = textwrap.fill(description, width=TARGET_WIDTH)
+    description_lines = wrapped_description.splitlines()
+
+    # Add blank lines until the description occupies the target number of rows
+    description_lines += [""] * max(0, TARGET_DESCRIPTION_ROWS - len(description_lines))
+    return description_lines
 
 
 def format_id(id, font_style):

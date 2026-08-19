@@ -3,14 +3,10 @@ import textwrap
 
 from colorama import Fore, Style, init
 
-from .formatting import format_evolution, format_id, format_type, format_shape
+from .formatting import format_padding, format_description, format_evolution, format_id, format_type, format_shape
 
 
 init()
-
-
-TARGET_WIDTH = 40
-TARGET_DESCRIPTION_ROWS = 5
 
 
 def display_json(pokemon):
@@ -34,27 +30,20 @@ def display_card(pokemon, pokemon_database, font_style):
     line2 = f"{species} Pokémon"
     line3 = f"{height} / {weight}"
 
-    pad1 = " " * (TARGET_WIDTH - len(line1) - len(id_art[0]))
-    pad2 = " " * (TARGET_WIDTH - len(line2) - len(id_art[1]))
-    pad3 = " " * (TARGET_WIDTH - len(line3) - len(id_art[2]))
-
     print()
-    print(f"{Fore.WHITE}{Style.BRIGHT}{line1}{Style.RESET_ALL}{pad1}{id_art[0]}")
-    print(f"{Fore.WHITE}{Style.NORMAL}{line2}{Style.RESET_ALL}{pad2}{id_art[1]}")
-    print(f"{Fore.WHITE}{Style.DIM}{line3}{Style.RESET_ALL}{pad3}{id_art[2]}")
+    pad = format_padding(line1)
+    print(f"{Fore.WHITE}{Style.BRIGHT}{line1}{Style.RESET_ALL}{pad}{id_art[0]}")
+    pad = format_padding(line2)
+    print(f"{Fore.WHITE}{Style.NORMAL}{line2}{Style.RESET_ALL}{pad}{id_art[1]}")
+    pad = format_padding(line3)
+    print(f"{Fore.WHITE}{Style.DIM}{line3}{Style.RESET_ALL}{pad}{id_art[2]}")
     print()
 
     formatted_types = [format_type(t) for t in types]
     print(" ".join(formatted_types))
 
-    wrapped_description = textwrap.fill(description, width=TARGET_WIDTH)
-    description_lines = wrapped_description.splitlines()
-
-    # Add blank lines until the description occupies the target number of rows
-    description_lines += [""] * max(0, TARGET_DESCRIPTION_ROWS - len(description_lines))
-
     print()
-    print("\n".join(description_lines))
+    print("\n".join(format_description(description)))
 
     print()
     formatted_evolution = format_evolution(evolution_ids, id, pokemon_database)
