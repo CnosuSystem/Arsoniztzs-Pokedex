@@ -71,5 +71,4 @@ def search(ctx, pokemon, format, style, list):
                     return
 
     print()
-    print("Pokemon not found.")
-    print()
+    print("Pokémon not found.")
